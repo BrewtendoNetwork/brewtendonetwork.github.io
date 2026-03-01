@@ -38,6 +38,7 @@ body {
     font-size: 30px;
     border: none;
     box-shadow: rgba(0,0,0,0.2) 1px 1px 10px inset;
+    font-family: inherit;
 }
 
 @media (max-width: 800px) {
