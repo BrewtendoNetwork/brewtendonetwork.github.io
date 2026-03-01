@@ -1,12 +1,52 @@
+:root {
+    --bg-color: #fffeef;
+    --text-gray: #828282;
+    --shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+@font-face {
+    font-family: RodinNTLG;
+    src: url('../FOT-RodinNTLG Pro DB.otf');
+}
+
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-  font-family: sans-serif;
-  text-align: center;
-  background-color: #ffffff;
-  color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    background-color: var(--bg-color);
+    opacity: 1;
+    background-image: linear-gradient(0deg, var(--bg-color) 50%, #feedcb 50%);
+    background-size: 6px 6px;
+    color: var(--text-gray);
+    font-family: RodinNTLG;
+}
+
+#header-wip {
+    font-weight: 400;
+}
+
+.test-btn {
+    color: var(--text-gray);
+    background-image: linear-gradient(to top, #d6d3bd, #f7f3ef);
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+    width: fit-content;
+    height: fit-content;
+    min-width: 250px;
+    min-height: 150px;
+    font-size: 1.5vw;
+    border-color: #bfbfbf;
+    border-style: solid;
+}
+
+.test-btn:hover {
+    transform: scale(1.05);
+}
+
+.test-btn:active {
+    transform: scale(0.95);
 }
