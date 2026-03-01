@@ -15,9 +15,9 @@
         <source src="meta/sounds/btn-touch.mp3" type="audio/mp3" />
     </audio>
 
-    <p>new guide page wowwwww</p></p>
+    <p>new guide page wowwwww</p>
 
-    <button type="button" class="test-btn" onclick="window.location = 'index.html'; document.getElementById('touch-sound').play(); document.getElementById('decide-sound').play();">
+    <button type="button" class="test-btn" onclick="document.getElementById('touch-sound').play(); document.getElementById('decide-sound').play(); setTimeout(function(){ window.location = 'index.html'; }, 200);">
         go back home
     </button>
 </body>
