@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brewtendo</title>
     <link rel="stylesheet" href="meta/css/main.css">
+    <link rel="icon" type="image/x-icon" href="meta/images/favicon.png">
 </head>
 <body>
+    <audio id="decide-sound">
+        <source src="meta/sounds/decide.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="touch-sound">
+        <source src="meta/sounds/btn-touch.mp3" type="audio/mp3" />
+    </audio>
     <!--NOT AI BTW-->
-    <h1 id="header-wip">Brewtendo Network</h1>
+    <img src="meta/images/logo.png"/>
     <p>(actually human) website back soon holy shit</p>
-    <h6>by cannedfart btw :)</h6>
-    <h6>and nebula too (no ai this time fr)</h6>
-    <button type="button" class="test-btn">test button</button>
+    <h3>by cannedfart <img class="pfp" src="https://cdn.discordapp.com/avatars/1106930666333028422/f676c7fde54ed42351e094cac5825324.png"/> & nebula <img class="pfp" src="https://cdn.discordapp.com/avatars/1407843801762107535/aa55584f743396e1adcd23d949939096.png"> btw :)</h3>
+    <button type="button" class="test-btn" onclick="window.location = '#'; document.getElementById('touch-sound').play(); document.getElementById('decide-sound').play();">test button</button>
 </body>
 </html>
