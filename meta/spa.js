@@ -14,7 +14,7 @@ function changeContent(page) {
 			break;
 		case 'guide':
 			contentDiv.innerHTML = `
-				<h2>You will need a modded 3DS with luma3ds installed see <a href="https://3ds.hacks.guide/">https://3ds.hacks.guide/</a> for more info.
+				<h1>You will need a modded 3DS with luma3ds installed see <a href="https://3ds.hacks.guide/">https://3ds.hacks.guide/</a> for more info.
 <br /><br />
 Setting up the Brewtendo eShop:
 Install the ips patch below labeled <code>0004013000002F02.ips</code> to <code>SD:\luma\sysmodules\</code> on your SD Card.
@@ -35,7 +35,7 @@ To make your games reappear, you can use faketik:<br />
 Download faketik.3dsx below<br />
 Place the file in <code>SD:/3ds/faketik.3dsx</code> on your SD card<br />
 Launch faketik from the Homebrew Launcher<br />
-Follow the on-screen instructions to regenerate the tickets & games will reappear.</h2>
+Follow the on-screen instructions to regenerate the tickets & games will reappear.</h1>
 				<button type="button" class="test-btn" onclick="changeContent('home'); document.getElementById('touch-sound').play(); document.getElementById('decide-sound').play();">
 					go back home
 				</button>
