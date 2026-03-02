@@ -14,7 +14,7 @@ function changeContent(page) {
 		case 'guide':
 			contentDiv.innerHTML = `
 				<p>new guide page wowwwww</p>
-				<button type="button" class="test-btn" onclick="changeContent('home'); document.getElementById('touch-sound').play(); document.getElementById('decide-sound').play(); setTimeout(function(){ window.location = 'index.html'; }, 200);">
+				<button type="button" class="test-btn" onclick="changeContent('home'); document.getElementById('touch-sound').play(); document.getElementById('decide-sound').play();">
 					go back home
 				</button>
 			`;
