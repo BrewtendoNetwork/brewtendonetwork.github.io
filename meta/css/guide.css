@@ -56,7 +56,7 @@ body {
 }
 
 .guide-txt {
-    width: 50vw;
+    width: 100vw;
 }
 
 @media (max-width: 800px) {
@@ -64,7 +64,7 @@ body {
         font-size: 5vw;
     }
     .guide-txt {
-        width: 99vw;
+        width: 100vw;
     }
 }
 
