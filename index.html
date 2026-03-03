@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brewtendo</title>
-    <link rel="stylesheet" href="meta/css/main.css">
+    <link id="pagestyle" rel="stylesheet" href="meta/css/main.css">
     <link rel="icon" type="image/x-icon" href="meta/images/favicon.png">
+    <script type="text/javascript">
+        function swapStyleSheet(sheet) {
+            document.getElementById('pagestyle').setAttribute('href', sheet);
+        }
+    </script>
 </head>
 <body>
     <audio id="decide-sound">
@@ -20,8 +25,9 @@
             <img src="meta/images/logo.png" />
             <p>(actually human) website back soon holy shit</p>
             <h3>by cannedfart <img class="pfp" src="https://cdn.discordapp.com/avatars/1106930666333028422/f676c7fde54ed42351e094cac5825324.png" /> & nebula <img class="pfp" src="https://cdn.discordapp.com/avatars/1407843801762107535/aa55584f743396e1adcd23d949939096.png"> btw :)</h3>
-            <h4>note that all buttons will have a big redesign to match the eshop so dont edit them too much</h3>
-            <button type="button" class="test-btn" onclick="changeContent('guide'); document.getElementById('touch-sound').play(); document.getElementById('decide-sound').play();">Guide</button>
+            <h4>note that all buttons will have a big redesign to match the eshop so dont edit them too much</h4>
+            <!--changeContent('to which case you wanna change it to'), swapStyleSheet('where your css file is')-->
+            <button type="button" class="test-btn" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); document.getElementById('touch-sound').play(); document.getElementById('decide-sound').play();">Guide</button>
         </div>
     </main>
     <script src="meta/js/spa.js"></script>

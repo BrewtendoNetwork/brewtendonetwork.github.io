@@ -10,6 +10,11 @@
     src: url('../FOT-RodinNTLG Pro DB.otf');
 }
 
+@font-face {
+    font-family: MarvelouzTubeFont3;
+    src: url('../MarvelouzTube Font 3.ttf')
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -27,7 +32,12 @@ body {
     overflow-x: hidden;
     min-height: 100vh;
     cursor: default;
-    padding-top: 50px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 .test-btn {
@@ -65,4 +75,25 @@ body {
     position: relative;
     top: 5px;
     box-shadow: 1px 1px white;
+}
+
+body {
+    padding-bottom: 510px;
+}
+
+.guide-txt {
+    width: 50vw;
+}
+
+#header-guide {
+    font-size: 40px;
+    color: orange;
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+    font-family: MarvelouzTubeFont3;
+    font-weight: 100;
+}
+
+.header-column {
+    text-decoration: underline;
 }
