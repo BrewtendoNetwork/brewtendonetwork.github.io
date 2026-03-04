@@ -32,36 +32,39 @@ body {
     overflow-x: hidden;
     min-height: 100vh;
     cursor: default;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .navi-bar {
-    background-image: linear-gradient(to top, #f57e00, orange);
+    background-image: linear-gradient(to top, #fff, #e6e6e6);
     overflow: hidden;
-    border-bottom: solid 2px darkorange;
+    border-bottom: solid 2px #b5b5b5;
     width: 100vw;
     position: relative;
-    bottom: 50px;
-    box-shadow: var(--shadow)
+    bottom: 100px;
+    box-shadow: var(--shadow);
+    border-radius: 0 0 30px 30px;
 }
 
     .navi-bar a {
         float: left;
-        color: white;
+        color: var(--text-color);
         text-align: center;
-        padding: 14px 16px;
+        padding: 20px 22px;
         text-decoration: none;
-        font-size: 12px;
+        font-size: 13px;
+        border-left: 1px solid #b5b5b5;
+        border-right: 1px solid #b5b5b5;
     }
 
         .navi-bar a:hover {
-            background-color: #f57e00;
-            color: white;
+            background-color: #e6e6e6;
+            color: var(--text-color);
         }
 
         .navi-bar a:active {
-            background-color: #f57e00;
-            color: white;
+            background-color: #e6e6e6;
+            color: var(--text-color);
         }
 
 #content {
