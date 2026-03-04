@@ -32,7 +32,37 @@ body {
     overflow-x: hidden;
     min-height: 100vh;
     cursor: default;
+    padding-top: 50px;
 }
+
+.navi-bar {
+    background-image: linear-gradient(to top, #f57e00, orange);
+    overflow: hidden;
+    border-bottom: solid 2px darkorange;
+    width: 100vw;
+    position: relative;
+    bottom: 50px;
+    box-shadow: var(--shadow)
+}
+
+    .navi-bar a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+        .navi-bar a:hover {
+            background-color: #f57e00;
+            color: white;
+        }
+
+        .navi-bar a:active {
+            background-color: #f57e00;
+            color: white;
+        }
 
 #content {
     display: flex;
@@ -65,6 +95,7 @@ body {
     }
     .guide-txt {
         width: 100vw;
+        font-size: 20px;
     }
 }
 
@@ -88,6 +119,10 @@ body {
     padding-bottom: 510px;
 }
 
+.header-column {
+    text-decoration: underline;
+}
+
 #header-guide {
     font-size: 40px;
     color: orange;
@@ -95,8 +130,4 @@ body {
     text-decoration: underline;
     font-family: MarvelouzTubeFont3;
     font-weight: 100;
-}
-
-.header-column {
-    text-decoration: underline;
 }
