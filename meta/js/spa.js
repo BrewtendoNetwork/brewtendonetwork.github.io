@@ -5,10 +5,10 @@ function changeContent(page) {
 		case 'home':
 			contentDiv.innerHTML = `
 				<div class="navi-bar">
-					<a href="#" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Home</a>
-					<a href="#" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); select;">Install Guide</a>
-					<a href="#" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/main.css'); select;">Badge Arcade</a>
-					<a href="#" onclick="changeContent('nintendovideo'); swapStyleSheet('meta/css/main.css'); select;">Nintendo Video</a>
+                	<a href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Home</a>
+                	<a href="#guide" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); select;">Install Guide</a>
+                	<a href="#badgearcade" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/main.css'); select;">Badge Arcade</a>
+                	<a href="#nintendovideo" onclick="changeContent('nintendovideo'); swapStyleSheet('meta/css/main.css'); select;">Nintendo Video</a>
 				</div>
             	<!--NOT AI BTW-->
             	<h1 id="logo">Brewtendo</h1>
@@ -21,10 +21,10 @@ function changeContent(page) {
 		case 'guide':
 			contentDiv.innerHTML = `
 				<div class="navi-bar">
-					<a href="#" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Home</a>
-					<a href="#" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); select;">Install Guide</a>
-					<a href="#" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/main.css'); select;">Badge Arcade</a>
-					<a href="#" onclick="changeContent('nintendovideo'); swapStyleSheet('meta/css/main.css'); select;">Nintendo Video</a>
+					<a href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Home</a>
+                	<a href="#guide" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); select;">Install Guide</a>
+                	<a href="#badgearcade" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/main.css'); select;">Badge Arcade</a>
+                	<a href="#nintendovideo" onclick="changeContent('nintendovideo'); swapStyleSheet('meta/css/main.css'); select;">Nintendo Video</a>
 				</div>
 				<h1 id="header-guide">Brewtendo installation guide:</h1>
 				<div id="info-box">
@@ -51,10 +51,10 @@ function changeContent(page) {
 		case 'badgearcade':
 			contentDiv.innerHTML = `
 				<div class="navi-bar">
-					<a href="#" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Home</a>
-					<a href="#" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); select;">Install Guide</a>
-					<a href="#" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/main.css'); select;">Badge Arcade</a>
-					<a href="#" onclick="changeContent('nintendovideo'); swapStyleSheet('meta/css/main.css'); select;">Nintendo Video</a>
+					<a href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Home</a>
+                	<a href="#guide" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); select;">Install Guide</a>
+                	<a href="#badgearcade" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/main.css'); select;">Badge Arcade</a>
+                	<a href="#nintendovideo" onclick="changeContent('nintendovideo'); swapStyleSheet('meta/css/main.css'); select;">Nintendo Video</a>
 				</div>
 				<h1>nothing yet :)</h1>
 			`;
