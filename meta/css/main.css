@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #fffeef;
+    --bg-color: #f2eebd;
     --text-color: #404040;
     /*might not need shadows yet but yk*/
     --shadow: 0px 5px 15px rgba(0,0,0,0.2);
@@ -25,7 +25,7 @@ body {
     text-align: center;
     background-color: var(--bg-color);
     opacity: 1;
-    background-image: linear-gradient(0deg, #FFFFFF00 50%, #feedcb 50%);
+    background-image: linear-gradient(0deg, var(--bg-color) 50%, #efe9a1 50%);
     background-size: 6px 6px;
     color: var(--text-color);
     font-family: 'RodinNTLG', sans-serif;
@@ -33,12 +33,13 @@ body {
     min-height: 100vh;
     cursor: default;
     padding-top: 100px;
+    overflow: hidden;
 }
 
 .navi-bar {
-    background-image: linear-gradient(to top, #fff, #e6e6e6);
+    background-image: linear-gradient(to bottom, #ffc400, #ffb300);
     overflow: hidden;
-    border-bottom: solid 2px #b5b5b5;
+    border-bottom: solid 2px darkorange;
     width: 100vw;
     position: relative;
     bottom: 100px;
@@ -48,7 +49,7 @@ body {
 
     .navi-bar a {
         float: left;
-        color: var(--text-color);
+        color: white;
         text-align: center;
         padding: 20px 22px;
         text-decoration: none;
@@ -58,7 +59,7 @@ body {
     @media (max-width: 800px) {
         .navi-bar a {
             float: left;
-            color: var(--text-color);
+            color: white;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
@@ -67,13 +68,13 @@ body {
     }
 
         .navi-bar a:hover {
-            background-color: #e6e6e6;
-            color: var(--text-color);
+            background-color: #ffb300;
+            color: white;
         }
 
         .navi-bar a:active {
-            background-color: #e6e6e6;
-            color: var(--text-color);
+            background-color: #ffb300;
+            color: white;
         }
 
 .test-btn {
@@ -117,5 +118,5 @@ body {
     font-size: 30px;
     font-family: MarvelouzTubeFont3;
     color: orange;
-    text-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    text-shadow: 3px 3px #dbd693;
 }

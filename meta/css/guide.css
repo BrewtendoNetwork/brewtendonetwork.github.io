@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #fffeef;
+    --bg-color: #f2eebd;
     --text-color: #404040;
     /*might not need shadows yet but yk*/
     --shadow: 0px 5px 15px rgba(0,0,0,0.2);
@@ -25,7 +25,7 @@ body {
     text-align: center;
     background-color: var(--bg-color);
     opacity: 1;
-    background-image: linear-gradient(0deg, #FFFFFF00 50%, #feedcb 50%);
+    background-image: linear-gradient(0deg, var(--bg-color) 50%, #efe9a1 50%);
     background-size: 6px 6px;
     color: var(--text-color);
     font-family: 'RodinNTLG', sans-serif;
@@ -33,12 +33,14 @@ body {
     min-height: 100vh;
     cursor: default;
     padding-top: 100px;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .navi-bar {
-    background-image: linear-gradient(to top, #fff, #e6e6e6);
+    background-image: linear-gradient(to bottom, #ffc400, #ffb300);
     overflow: hidden;
-    border-bottom: solid 2px #b5b5b5;
+    border-bottom: solid 2px darkorange;
     width: 100vw;
     position: relative;
     bottom: 100px;
@@ -48,38 +50,42 @@ body {
 
     .navi-bar a {
         float: left;
-        color: var(--text-color);
+        color: white;
         text-align: center;
         padding: 20px 22px;
         text-decoration: none;
         font-size: 13px;
     }
 
-    @media (max-width: 800px) {
-        .navi-bar a {
-            float: left;
-            color: var(--text-color);
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 10px;
-        }
+@media (max-width: 800px) {
+    .navi-bar a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 10px;
     }
+}
 
-        .navi-bar a:hover {
-            background-color: #e6e6e6;
-            color: var(--text-color);
-        }
+.navi-bar a:hover {
+    background-color: #ffb300;
+    color: white;
+}
 
-        .navi-bar a:active {
-            background-color: #e6e6e6;
-            color: var(--text-color);
-        }
+.navi-bar a:active {
+    background-color: #ffb300;
+    color: white;
+}
 
 #content {
     display: flex;
     flex-direction: column;
     align-content: center;
+    margin: 0 auto;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .test-btn {
@@ -97,17 +103,53 @@ body {
     font-family: inherit;
 }
 
+#other-info-box {
+    background-image: linear-gradient(to bottom, #ffc400, #ffb300);
+    border: 3px solid darkorange;
+    border-radius: 15px;
+    width: fit-content;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-shadow: 2px 2px darkorange;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: var(--shadow);
+}
+
+#info-box {
+    background-color: #aba282;
+    border: 3px solid #757463;
+    border-radius: 15px;
+    width: fit-content;
+    max-width: 1700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #f2f2f2;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: var(--shadow);
+    opacity: 0.8;
+}
+
 .guide-txt {
-    width: 100vw;
+    width: 50vw;
 }
 
 @media (max-width: 800px) {
     .test-btn {
         font-size: 5vw;
-    }
-    .guide-txt {
-        width: 100vw;
-        font-size: 20px;
     }
 }
 
@@ -127,10 +169,6 @@ body {
     box-shadow: 1px 1px white;
 }
 
-body {
-    padding-bottom: 510px;
-}
-
 .header-column {
     text-decoration: underline;
 }
@@ -142,4 +180,6 @@ body {
     text-decoration: underline;
     font-family: MarvelouzTubeFont3;
     font-weight: 100;
+    text-shadow: 3px 3px #dbd693;
 }
+
