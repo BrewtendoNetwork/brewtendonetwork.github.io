@@ -88,21 +88,6 @@ body {
     overflow-wrap: break-word;
 }
 
-.test-btn {
-    color: var(--text-gray);
-    background-image: linear-gradient(to top, #d6d3bd 2%, #f7f3ef 15%);
-    border-radius: 15px;
-    transition: transform 0.2s ease;
-    width: fit-content;
-    height: fit-content;
-    min-width: 250px;
-    min-height: 150px;
-    font-size: 30px;
-    border: none;
-    box-shadow: rgba(0,0,0,0.2) 1px 1px 10px inset;
-    font-family: inherit;
-}
-
 #other-info-box {
     background-image: linear-gradient(to bottom, #ffc400, #ffb300);
     border: 3px solid darkorange;
@@ -143,30 +128,16 @@ body {
     opacity: 0.8;
 }
 
+@media (max-width: 800px) {
+    #other-info-box {
+        width: 95vw;
+    }
+    #info-box {
+        width: 95vw;
+    }
+
 .guide-txt {
     width: 50vw;
-}
-
-@media (max-width: 800px) {
-    .test-btn {
-        font-size: 5vw;
-    }
-}
-
-.test-btn:hover {
-    transform: scale(1.05);
-}
-
-.test-btn:active {
-    transform: scale(0.95);
-}
-
-.pfp {
-    width: 30px;
-    border-radius: 50px;
-    position: relative;
-    top: 5px;
-    box-shadow: 1px 1px white;
 }
 
 .header-column {
