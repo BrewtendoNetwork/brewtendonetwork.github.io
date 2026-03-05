@@ -42,6 +42,7 @@ function changeContent(page) {
 				<div id="other-info-box">
 					<h3 class="guide-txt">Other Useful Information</h3>
 					<details><summary class="guide-txt" class="header-column">Games Disappearing on First Connection</summary><h5 class="guide-txt">On the first connection, games installed on your console may disappear from the home menu <br />(this does not effect saves unless update not found, be careful, example streetpass update is disabled/faketik not used)<br />This is normal behavior. The games have not actually disappeared.<br />To make your games reappear, you can use faketik:<br />Download <a href="https://drive.google.com/uc?export=download&id=1utsgz3Ou22HU50CLgFcwHnnrVSz_cmO3">faketik.3dsx</a><br />Place the file in <code>SD:/3ds/faketik.3dsx</code> on your SD card<br />Launch faketik from the Homebrew Launcher<br />Follow the on-screen instructions to regenerate the tickets & games will reappear.<br />faketik is also on universal updater if you dont want to install it manually</details>
+					<details><summary class="guide-txt">Theme Shop data deletion</summary<h5>Go to FBI, ext save data, for USA you delete ext save data ending in 000002cd for EUR you delete ext dave data ending in 000002ce.</h5></details>
 				</div>
 				<hr class="hide">
 				<hr class="hide">
