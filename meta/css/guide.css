@@ -141,6 +141,7 @@ body {
     }
     .guide-txt {
         width: 90vw;
+        font-size: 15px;
     }
 }
 
