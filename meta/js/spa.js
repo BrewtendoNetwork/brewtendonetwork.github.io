@@ -16,7 +16,6 @@ function changeContent(page) {
             	<h3>by cannedfart <img class="pfp" src="https://cdn.discordapp.com/avatars/1106930666333028422/f676c7fde54ed42351e094cac5825324.png" /> & nebula <img class="pfp" src="https://cdn.discordapp.com/avatars/1407843801762107535/aa55584f743396e1adcd23d949939096.png"> btw :)</h3>
             	<h4>note that all buttons will have a big redesign to match the eshop so dont edit them too much</h3>
 				<!--changeContent('to which case you wanna change it to'), swapStyleSheet('where your css file is')-->
-				<footer><img src="https://mii-unsecure.ariankordi.net/miis/image.png?nnid=someguymaybeig&api_id=1&data=AwEAMEJgeISghLBAkPCfi8z7ZQ305AAADlFjAGEAbgBuAGUAZABmAGEAcgB0AH9lAgBEASloRBYJNEYSoRAXaA0AgCAAUkhQSgBhAHkAcgBvAG0AZQAAAAAAAAAAAC8B&type=face&expression=surprise_open_mouth&width=270&pantsColor=gray&characterYRotate=45" /></footer>
 			`;
 			break;
 		case 'guide':
