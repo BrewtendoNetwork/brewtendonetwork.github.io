@@ -34,7 +34,7 @@ body {
     min-height: 100vh;
     cursor: default;
     padding-top: 100px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 #center-div {
@@ -78,6 +78,12 @@ body {
     bottom: 100px;
     box-shadow: var(--shadow);
     border-radius: 0 0 30px 30px;
+}
+
+@media (max-width: 800) {
+    .navi-bar {
+        width: 100vw;
+    }
 }
 
     .navi-bar h4 {
