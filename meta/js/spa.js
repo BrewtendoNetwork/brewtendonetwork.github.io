@@ -5,8 +5,7 @@ function changeContent(page) {
 		case 'home':
 			contentDiv.innerHTML = `
 				<div class="navi-bar">
-					<h4>Brewtendo</h4>
-					<h4 href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Home</h4>
+					<h4 href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Brewtendo</h4>
 					<h4 href="#top" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); select;">Install Guide</h4>
 					<h4 href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/main.css'); select;">Badge Arcade</h4>
 					<h4 href="#top" onclick="changeContent('other'); swapStyleSheet('meta/css/main.css'); select;">Other</h4>
@@ -28,8 +27,7 @@ function changeContent(page) {
 		case 'guide':
 			contentDiv.innerHTML = `
 				<div class="navi-bar">
-					<h4>Brewtendo</h4>
-					<h4 href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Home</h4>
+					<h4 href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Brewtendo</h4>
 					<h4 href="#top" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); select;">Install Guide</h4>
 					<h4 href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/main.css'); select;">Badge Arcade</h4>
 					<h4 href="#top"onclick="changeContent('other'); swapStyleSheet('meta/css/main.css'); select;">Other</h4>
@@ -68,8 +66,7 @@ function changeContent(page) {
 		case 'badgearcade':
 			contentDiv.innerHTML = `
 				<div class="navi-bar">
-					<h4>Brewtendo</h4>
-					<h4 href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Home</h4>
+					<h4 href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Brewtendo</h4>
 					<h4 href="#top" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); select;">Install Guide</h4>
 					<h4 href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/main.css'); select;">Badge Arcade</h4>
 					<h4 href="#top" onclick="changeContent('other'); swapStyleSheet('meta/css/main.css'); select;">Other</h4>
@@ -80,11 +77,10 @@ function changeContent(page) {
 		case 'other':
 			contentDiv.innerHTML = `
 				<div class="navi-bar">
-					<h4>Brewtendo</h4>
-					<h4 href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Home</h4>
+					<h4 href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Brewtendo</h4>
 					<h4 href="#top" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); select;">Install Guide</h4>
 					<h4 href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/main.css'); select;">Badge Arcade</h4>
-					<h4 href="#top" onclick="changeContent('other'); swapStyleSheet('meta/css/main.css'); select;">other</h4>
+					<h4 href="#top" onclick="changeContent('other'); swapStyleSheet('meta/css/main.css'); select;">Other</h4>
 				</div>
 				<h1>nothing yet :)</h1>
 			`;
