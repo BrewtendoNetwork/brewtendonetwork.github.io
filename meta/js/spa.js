@@ -9,8 +9,7 @@ function changeContent(page) {
 					<h4 href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Home</h4>
 					<h4 href="#top" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); select;">Install Guide</h4>
 					<h4 href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/main.css'); select;">Badge Arcade</h4>
-					<h4 href="#top" onclick="changeContent('nintendovideo'); swapStyleSheet('meta/css/main.css'); select;">Nintendo Video</h4>
-					<h4 href="#top"onclick="changeContent('miiverse'); swapStyleSheet('meta/css/main.css'); select;">Miiverse</h4>
+					<h4 href="#top" onclick="changeContent('other'); swapStyleSheet('meta/css/main.css'); select;">Other</h4>
 				</div>
             	<!--NOT AI BTW-->
 				<div id="center-div">
@@ -33,8 +32,7 @@ function changeContent(page) {
 					<h4 href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Home</h4>
 					<h4 href="#top" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); select;">Install Guide</h4>
 					<h4 href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/main.css'); select;">Badge Arcade</h4>
-					<h4 href="#top" onclick="changeContent('nintendovideo'); swapStyleSheet('meta/css/main.css'); select;">Nintendo Video</h4>
-					<h4 href="#top"onclick="changeContent('miiverse'); swapStyleSheet('meta/css/main.css'); select;">Miiverse</h4>
+					<h4 href="#top"onclick="changeContent('other'); swapStyleSheet('meta/css/main.css'); select;">Other</h4>
 				</div>
 				<h1 id="header-guide">Brewtendo installation guide:</h1>
 				<div id="info-box">
@@ -74,34 +72,19 @@ function changeContent(page) {
 					<h4 href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Home</h4>
 					<h4 href="#top" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); select;">Install Guide</h4>
 					<h4 href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/main.css'); select;">Badge Arcade</h4>
-					<h4 href="#top" onclick="changeContent('nintendovideo'); swapStyleSheet('meta/css/main.css'); select;">Nintendo Video</h4>
-					<h4 href="#top"onclick="changeContent('miiverse'); swapStyleSheet('meta/css/main.css'); select;">Miiverse</h4>
+					<h4 href="#top" onclick="changeContent('other'); swapStyleSheet('meta/css/main.css'); select;">Other</h4>
 				</div>
 				<h1>nothing yet :)</h1>
 			`;
 			break;
-		case 'nintendovideo':
+		case 'other':
 			contentDiv.innerHTML = `
 				<div class="navi-bar">
 					<h4>Brewtendo</h4>
 					<h4 href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Home</h4>
 					<h4 href="#top" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); select;">Install Guide</h4>
 					<h4 href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/main.css'); select;">Badge Arcade</h4>
-					<h4 href="#top" onclick="changeContent('nintendovideo'); swapStyleSheet('meta/css/main.css'); select;">Nintendo Video</h4>
-					<h4 href="#top"onclick="changeContent('miiverse'); swapStyleSheet('meta/css/main.css'); select;">Miiverse</h4>
-				</div>
-				<h1>nothing yet :)</h1>
-			`;
-			break;
-		case 'miiverse':
-			contentDiv.innerHTML = `
-				<div class="navi-bar">
-					<h4>Brewtendo</h4>
-					<h4 href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Home</h4>
-					<h4 href="#top" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); select;">Install Guide</h4>
-					<h4 href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/main.css'); select;">Badge Arcade</h4>
-					<h4 href="#top" onclick="changeContent('nintendovideo'); swapStyleSheet('meta/css/main.css'); select;">Nintendo Video</h4>
-					<h4 href="#top"onclick="changeContent('miiverse'); swapStyleSheet('meta/css/main.css'); select;">Miiverse</h4>
+					<h4 href="#top" onclick="changeContent('other'); swapStyleSheet('meta/css/main.css'); select;">other</h4>
 				</div>
 				<h1>nothing yet :)</h1>
 			`;
