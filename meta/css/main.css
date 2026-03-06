@@ -67,23 +67,28 @@ body {
     opacity: 0.8;
 }
 
+@media (max-width: 800px) {
+    .navi-bar {
+        width: 100vw;
+    }
+}
+
+@media (min-width: 800px) {
+    .navi-bar {
+        width: 50vw;
+    }
+}
+
 .navi-bar {
     background-image: linear-gradient(to bottom, #ffc400, #ffb300);
     overflow: hidden;
     border-bottom: solid 2px darkorange;
     border-right: solid 2px darkorange;
     border-left: solid 2px darkorange;
-    width: 50vw;
     position: relative;
     bottom: 100px;
     box-shadow: var(--shadow);
     border-radius: 0 0 30px 30px;
-}
-
-@media (max-width: 800) {
-    .navi-bar {
-        width: 100vw;
-    }
 }
 
     .navi-bar h4 {
