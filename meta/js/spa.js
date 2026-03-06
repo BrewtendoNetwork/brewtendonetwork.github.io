@@ -54,8 +54,8 @@ function changeContent(page) {
 				<hr class="hide">
 				<hr class="hide">
 				<div id="center-div">
-					<div id="guide-button" class="pill-button" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css');">
-						<u>Installation guide</u>
+					<div class="pill-button" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css');">
+						<u>Home Page</u>
 					</div>
 				</div>
 				<hr class="hide">
