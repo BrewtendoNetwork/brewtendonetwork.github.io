@@ -30,16 +30,21 @@
         <div id="content">
             <div class="navi-bar">
                 <a href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Home</a>
-                <a href="#guide" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); select;">Install Guide</a>
-                <a href="#badgearcade" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/main.css'); select;">Badge Arcade</a>
-                <a href="#nintendovideo" onclick="changeContent('nintendovideo'); swapStyleSheet('meta/css/main.css'); select;">Nintendo Video</a>
+                <a href="#top" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); select;">Install Guide</a>
+                <a href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/main.css'); select;">Badge Arcade</a>
+                <a href="#top" onclick="changeContent('nintendovideo'); swapStyleSheet('meta/css/main.css'); select;">Nintendo Video</a>
+                <h4>Brewtendo</h4>
             </div>
             <!--NOT AI BTW-->
-            <h1 id="logo">Brewtendo</h1>
-            <p>(actually human) website</p>
-            <h3>by cannedfart <img class="pfp" src="https://cdn.discordapp.com/avatars/1106930666333028422/f676c7fde54ed42351e094cac5825324.png" /> & nebula <img class="pfp" src="https://cdn.discordapp.com/avatars/1407843801762107535/aa55584f743396e1adcd23d949939096.png"> btw :)</h3>
-            <h4>Note that all buttons will have a redesign to match the eshop so dont edit them too much</h4>
-            <!--changeContent('to which case you wanna change it to'), swapStyleSheet('where your css file is')-->
+            <div id="center-div">
+                <h1 id="logo">Brewtendo</h1>
+                <p>(beta website)</p>
+                <h3>by cannedfart <img class="pfp" src="https://cdn.discordapp.com/avatars/1106930666333028422/f676c7fde54ed42351e094cac5825324.png" /> & barely nebula <img class="pfp" src="https://cdn.discordapp.com/avatars/1407843801762107535/aa55584f743396e1adcd23d949939096.png"> btw :)</h3>
+                <h4>Note that all buttons will have a redesign to match the eshop so dont edit them too much</h4>
+                <div id="guide-button" class="pill-button" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css');">
+                    <u>Installation guide</u>
+                </div>
+            </div>
         </div>
     </main>
     <script src="meta/js/spa.js"></script>

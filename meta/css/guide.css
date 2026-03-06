@@ -1,4 +1,5 @@
 :root {
+    --pill-bg: linear-gradient(to bottom, #ffc400, #ffb300);
     --bg-color: #f2eebd;
     --text-color: #404040;
     /*might not need shadows yet but yk*/
@@ -35,6 +36,15 @@ body {
     padding-top: 100px;
     overflow-x: hidden;
     overflow-y: scroll;
+}
+
+#center-div {
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.8;
 }
 
 .navi-bar {
@@ -78,6 +88,20 @@ body {
     color: white;
 }
 
+.navi-bar h4 {
+    display: none;
+}
+
+@media (min-width: 800px) {
+    .navi-bar h4 {
+        display: block;
+        font-family: MarvelouzTubeFont3;
+        color: white;
+        float: right;
+        padding: 0px 30px;
+    }
+}
+
 #content {
     display: flex;
     flex-direction: column;
@@ -89,8 +113,8 @@ body {
 }
 
 #other-info-box {
-    background-image: linear-gradient(to bottom, #ffc400, #ffb300);
-    border: 3px solid darkorange;
+    background-image: linear-gradient(to bottom, #f7f7f7, #e3e3e3);
+    border: 2px solid #bababa;
     border-radius: 15px;
     width: fit-content;
     max-width: 1200px;
@@ -98,19 +122,20 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: #f2f2f2;
+    color: var(--text-color);
     white-space: normal;
     word-wrap: break-word;
     overflow-wrap: break-word;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 10px;
     box-shadow: var(--shadow);
     opacity: 0.8;
 }
 
 #info-box {
     background-color: #aba282;
-    border: 3px solid #757463;
+    border: 2px solid #757463;
     border-radius: 15px;
     width: fit-content;
     max-width: 1700px;
@@ -161,3 +186,27 @@ body {
 
 .hide {
     opacity: 0;
+}
+
+.pill-button {
+    background: var(--pill-bg);
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 2px solid darkorange;
+    box-shadow: var(--shadow);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s ease;
+    width: fit-content;
+    min-width: 250px;
+}
+
+    .pill-button:hover {
+        transform: scale(1.05);
+    }
+
+    .pill-button:active {
+        transform: scale(0.95);
+    }

@@ -5,31 +5,37 @@ function changeContent(page) {
 		case 'home':
 			contentDiv.innerHTML = `
 				<div class="navi-bar">
-                	<a href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Home</a>
-                	<a href="#guide" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); select;">Install Guide</a>
-                	<a href="#badgearcade" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/main.css'); select;">Badge Arcade</a>
-                	<a href="#nintendovideo" onclick="changeContent('nintendovideo'); swapStyleSheet('meta/css/main.css'); select;">Nintendo Video</a>
+					<a href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Home</a>
+                	<a href="#top" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); select;">Install Guide</a>
+                	<a href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/main.css'); select;">Badge Arcade</a>
+                	<a href="#top" onclick="changeContent('nintendovideo'); swapStyleSheet('meta/css/main.css'); select;">Nintendo Video</a>
+					<h4>Brewtendo</h4>
 				</div>
             	<!--NOT AI BTW-->
-            	<h1 id="logo">Brewtendo</h1>
-            	<p>(actually human) website back soon holy shit</p>
-            	<h3>by cannedfart <img class="pfp" src="https://cdn.discordapp.com/avatars/1106930666333028422/f676c7fde54ed42351e094cac5825324.png" /> & nebula <img class="pfp" src="https://cdn.discordapp.com/avatars/1407843801762107535/aa55584f743396e1adcd23d949939096.png"> btw :)</h3>
-            	<h4>note that all buttons will have a big redesign to match the eshop so dont edit them too much</h3>
-				<!--changeContent('to which case you wanna change it to'), swapStyleSheet('where your css file is')-->
+				<div id="beta-center-div">
+					<h1 id="logo">Brewtendo</h1>
+					<p>(beta website)</p>
+					<h3>by cannedfart <img class="pfp" src="https://cdn.discordapp.com/avatars/1106930666333028422/f676c7fde54ed42351e094cac5825324.png" /> & barely nebula <img class="pfp" src="https://cdn.discordapp.com/avatars/1407843801762107535/aa55584f743396e1adcd23d949939096.png"> btw :)</h3>
+					<h4>Note that all buttons will have a redesign to match the eshop so dont edit them too much</h4>
+					<div id="guide-button" class="pill-button" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css');">
+						<u>Installation guide</u>
+					</div>
+				</div>
 			`;
 			break;
 		case 'guide':
 			contentDiv.innerHTML = `
 				<div class="navi-bar">
 					<a href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Home</a>
-                	<a href="#guide" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); select;">Install Guide</a>
-                	<a href="#badgearcade" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/main.css'); select;">Badge Arcade</a>
-                	<a href="#nintendovideo" onclick="changeContent('nintendovideo'); swapStyleSheet('meta/css/main.css'); select;">Nintendo Video</a>
+                	<a href="#top" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); select;">Install Guide</a>
+                	<a href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/main.css'); select;">Badge Arcade</a>
+                	<a href="#top" onclick="changeContent('nintendovideo'); swapStyleSheet('meta/css/main.css'); select;">Nintendo Video</a>
+					<h4>Brewtendo</h4>
 				</div>
 				<h1 id="header-guide">Brewtendo installation guide:</h1>
 				<div id="info-box">
 					<h1 class="guide-txt">You will need a modded 3DS with luma3ds installed see <a href="https://3ds.hacks.guide/">https://3ds.hacks.guide/</a> for more info.</h1>
-					<h1 class="guide-txt" class="header-column">Setting up the Brewtendo eShop:</h1>
+					<h1 class="guide-txt" class="header-column"><u>Setting up the Brewtendo eShop:</u></h1>
 					<h1 class="guide-txt">Install this <a href="https://drive.google.com/uc?export=download&id=1HsXZfe2kGBCBVG9noPdbEOt4k-iCstWT">ips patch</a> to <code>SD/luma/sysmodules/</code> on your SD Card.</h1>
 					<h1 class="guide-txt">Hold Select on Startup & Make sure there's a X next to at least Enable game patching & Enable loading external FIRMs and modules</h1>
 					<h1 class="guide-txt">Go into Pretendos Nimbus app & select Nintendo Network if your on Pretendo enjoy. If not while "recommended" nnid may have issues while pretendo works.</h1>
@@ -47,15 +53,24 @@ function changeContent(page) {
 				<hr class="hide">
 				<hr class="hide">
 				<hr class="hide">
+				<div id="center-div">
+					<div id="guide-button" class="pill-button" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css');">
+						<u>Installation guide</u>
+					</div>
+				</div>
+				<hr class="hide">
+				<hr class="hide">
+				<hr class="hide">
 			`;
 			break;
 		case 'badgearcade':
 			contentDiv.innerHTML = `
 				<div class="navi-bar">
 					<a href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); select;">Home</a>
-                	<a href="#guide" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); select;">Install Guide</a>
-                	<a href="#badgearcade" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/main.css'); select;">Badge Arcade</a>
-                	<a href="#nintendovideo" onclick="changeContent('nintendovideo'); swapStyleSheet('meta/css/main.css'); select;">Nintendo Video</a>
+                	<a href="#top" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); select;">Install Guide</a>
+                	<a href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/main.css'); select;">Badge Arcade</a>
+                	<a href="#top" onclick="changeContent('nintendovideo'); swapStyleSheet('meta/css/main.css'); select;">Nintendo Video</a>
+					<h4>Brewtendo</h4>
 				</div>
 				<h1>nothing yet :)</h1>
 			`;
