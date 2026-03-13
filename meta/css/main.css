@@ -76,6 +76,12 @@ body {
     float: left;
 }
 
+@media (max width: 800px) {
+    .style-center-div {
+        margin-bottom: 20px;
+    }
+}
+
 @media (max-width: 800px) {
     .navi-bar {
         width: 100vw;
