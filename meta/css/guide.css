@@ -218,7 +218,18 @@ body {
         transform: scale(0.95);
     }
 
-footer {
+
+#footer {
     font-family: MarvelouzTubeFont3;
-    color: var(--text-color);
+    color: white;
+    width: 100vw;
+    height: 500px;
+    background-image: linear-gradient(to bottom, #ebb400, #ffb300);
+    box-shadow: 10px 0px 15px rgba(0,0,0,0.2);
+    opacity: 0.8;
 }
+
+    #footer p {
+        position: relative;
+        top: 30px;
+    }
