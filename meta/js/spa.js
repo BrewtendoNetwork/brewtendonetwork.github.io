@@ -111,7 +111,8 @@ function changeContent(page) {
 					<h4 href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/guide.css'); playAudio('decide');">Badge Arcade</h4>
 					<h4 href="#top" onclick="changeContent('other'); swapStyleSheet('meta/css/main.css'); playAudio('decide');">Other</h4>
 				</div>
-				<h1>nothing yet :)</h1>
+				<ul>
+					<li></li>
 			`;
 			break;
 	}
