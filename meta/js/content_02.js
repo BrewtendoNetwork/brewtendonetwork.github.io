@@ -1,12 +1,14 @@
 function load_2() {
     return `
         <div class="navi-bar">
-			<h4 href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); playAudio('decide');">Brewtendo</h4>
-			<h4 href="#top" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); playAudio('decide');">Install Guide</h4>
-			<h4 href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/guide.css'); playAudio('decide');">Badge Arcade</h4>
-			<h4 href="#top"onclick="changeContent('other'); swapStyleSheet('meta/css/main.css'); playAudio('decide');">Other</h4>
-		</div>
-		<h1 id="header-guide-orange">Brewtendo installation guide:</h1>
+            <div id="center-navi">
+                <h4 href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); playAudio('decide');">Brewtendo</h4>
+                <h4 href="#top" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); playAudio('decide');"><u>Install Guide</u></h4>
+                <h4 href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/guide.css'); playAudio('decide');">Badge Arcade</h4>
+                <h4 href="#top" onclick="changeContent('other'); swapStyleSheet('meta/css/main.css'); playAudio('decide');" style="border: none;">Other Info</h4>
+            </div>
+        </div>
+			<h1 id="header-guide-orange">Brewtendo installation guide:</h1>
 		<div id="info-box">
 			<h1 class="guide-txt">You will need a modded 3DS with luma3ds installed see <a href="https://3ds.hacks.guide/">https://3ds.hacks.guide/</a> for more info.</h1>
 			<h1 class="guide-txt" class="header-column"><u>Setting up the Brewtendo eShop:</u></h1>

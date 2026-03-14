@@ -37,8 +37,14 @@ body {
     overflow-x: hidden;
 }
 
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #center-div {
-    width: ;
+    width: fit-content;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -52,7 +58,7 @@ body {
     }
 }
 
-.style-center-div {
+.style-center-div-nocolor {
     background-image: linear-gradient(to bottom, #fff4e0, #ffeac4);
     border-radius: 25px;
     width: fit-content;
@@ -65,59 +71,78 @@ body {
     white-space: normal;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 50px;
+    padding: 10px 10px 50px 10px;
     box-shadow: var(--shadow);
     opacity: 1;
+    margin-bottom: 50px;
 }
 
-#float {
-    float: left;
-}
-
-@media (max width: 800px) {
-    .style-center-div {
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 800px) {
-    .navi-bar {
-        width: 100vw;
-    }
+.style-center-div-black {
+    background-color: #aba282;
+    border-radius: 25px;
+    width: fit-content;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #f2f2f2;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    padding: 10px 10px 50px 10px;
+    box-shadow: var(--shadow);
+    opacity: 1;
+    margin-bottom: 50px;
 }
 
 @media (min-width: 800px) {
-    .navi-bar {
-        width: 50vw;
+    .style-center-div-nocolor {
+        margin-right: 20px;
+    }
+
+    .style-center-div-black {
+        margin-left: 20px;
     }
 }
 
-.navi-bar {
-    background-image: linear-gradient(to bottom, #ffc400, #ffb300);
-    overflow: hidden;
-    position: relative;
-    bottom: 100px;
-    box-shadow: var(--shadow);
-    border-radius: 0 0 30px 30px;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-    .navi-bar h4 {
+    #float {
         float: left;
-        color: white;
-        text-align: center;
-        padding: 0px 30px;
-        text-decoration: none;
-        font-size: 13px;
-        border-right: 2px solid #f7e0b5;
     }
 
     @media (max-width: 800px) {
+        .navi-bar {
+            width: 100vw;
+        }
+    }
+
+    @media (min-width: 800px) {
+        .navi-bar {
+            width: 50vw;
+        }
+    }
+
+    .navi-bar {
+        background-image: linear-gradient(to bottom, #ffc400, #ffb300);
+        overflow: hidden;
+        position: relative;
+        bottom: 100px;
+        box-shadow: var(--shadow);
+        border-radius: 0 0 30px 30px;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        display: flex;
+        justify-content: center;
+    }
+
+@media (min-width: 800px) {
+    #center-navi {
+        width: fit-content;
+    }
+}
+
         .navi-bar h4 {
             float: left;
             color: white;
@@ -125,77 +150,106 @@ body {
             padding: 0px 15px;
             text-decoration: none;
             font-size: 10px;
+            border-right: 2px solid #f7e0b5;
         }
+
+            .navi-bar h4:hover {
+                cursor: pointer;
+                color: white;
+                padding: 0 15px;
+            }
+
+            .navi-bar h4:active {
+                cursor: pointer;
+                color: white;
+                padding: 0px 15px;
+            }
+
+
+    @media (min-width: 800px) {
+        .navi-bar h4 {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 0px 50px;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+            .navi-bar h4:hover {
+                cursor: pointer;
+                color: white;
+                padding: 0 50px;
+            }
+
+            .navi-bar h4:active {
+                cursor: pointer;
+                color: white;
+                padding: 0px 50px;
+            }
     }
 
-.navi-bar h4:hover {
-    cursor: pointer;
-    color: white;
-    padding: 0 30px;
-}
-
-.navi-bar h4:active {
-    cursor: pointer;
-    color: white;
-    padding: 0px 30px;
-}
-
-.test-btn:hover {
-    transform: scale(1.05);
-}
-
-.test-btn:active {
-    transform: scale(0.95);
-}
-
-.pfp {
-    width: 30px;
-    border-radius: 50px;
-    position: relative;
-    top: 5px;
-    box-shadow: 1px 1px white;
-}
-
-#logo {
-    font-size: 40px;
-    font-family: MarvelouzTubeFont3;
-    color: darkorange;
-    text-shadow: 3px 3px #dbd693;
-}
-
-.pill-button {
-    background: var(--pill-bg);
-    padding: 15px 30px;
-    border-radius: 50px;
-    box-shadow: var(--shadow);
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    text-align: center;
-    transition: transform 0.2s ease;
-    width: fit-content;
-    min-width: 250px;
-}
-
-    .pill-button:hover {
-        transform: scale(1.05);
+    .pfp {
+        width: 30px;
+        border-radius: 50px;
+        position: relative;
+        top: 5px;
+        box-shadow: 1px 1px white;
     }
 
-    .pill-button:active {
-        transform: scale(0.95);
+    #logo {
+        font-size: 40px;
+        font-family: MarvelouzTubeFont3;
+        color: darkorange;
+        text-shadow: 3px 3px #dbd693;
     }
 
-#footer {
-    font-family: MarvelouzTubeFont3;
-    color: white;
-    width: 100vw;
-    height: 500px;
-    background-image: linear-gradient(to bottom, #ebb400, #ffb300);
-    box-shadow: 10px 0px 15px rgba(0,0,0,0.2);
-    opacity: 0.8;
-}
+    .pill-button {
+        background: var(--pill-bg);
+        padding: 15px 30px;
+        border-radius: 50px;
+        box-shadow: var(--shadow);
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        text-align: center;
+        transition: transform 0.2s ease;
+        width: fit-content;
+        min-width: 250px;
+    }
 
-#footer p {
-    position: relative;
-    top: 30px;
-}
+        .pill-button:hover {
+            transform: scale(1.05);
+        }
+
+        .pill-button:active {
+            transform: scale(0.95);
+        }
+
+    #footer {
+        font-family: MarvelouzTubeFont3;
+        color: white;
+        width: 100vw;
+        height: 500px;
+        background-image: linear-gradient(to bottom, #ebb400, #ffb300);
+        box-shadow: 10px 0px 15px rgba(0,0,0,0.2);
+        opacity: 0.8;
+        display: flex;
+        flex-direction: column;
+    }
+
+        #footer p {
+            position: relative;
+            top: 30px;
+            float: left;
+        }
+
+    .link {
+        text-decoration: none;
+        color: white;
+    }
+
+        .link:hover {
+            color: #fff9e0;
+        }
+                
