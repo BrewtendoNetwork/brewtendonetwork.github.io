@@ -8,6 +8,7 @@ function load_5() {
                 <h4 href="#top" onclick="changeContent('other'); swapStyleSheet('meta/css/main.css'); playAudio('decide');" style="border: none;">Other Info</h4>
             </div>
         </div>
+        <div id="center-div">
         <h1 id="header-guide-blue">Progress on website:</h1>
         <script>
             let percent = 3;
@@ -23,5 +24,6 @@ function load_5() {
             <li>Give out deserved credits</li>
         </ul>
         <p>(yes thats really it I have nothing else to add other than this..)<br />I will remove what's finished every time I finish something</p>
+        </div>
     `;
 }
