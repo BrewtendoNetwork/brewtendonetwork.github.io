@@ -1,3 +1,8 @@
+/**
+ * Staff member data for the Brewtendo Network website
+ * Each staff member has a name and associated Mii image
+ */
+
 export interface StaffMember {
   name: string;
   image: string;
@@ -24,18 +29,16 @@ export const staffMembers: StaffMember[] = [
   { name: 'Somarix', image: '/images/miis/Zay_render_headshot_2026-03-24T22_52_59.073Z.png' },
   { name: 'Technet', image: '/images/miis/awoken_kin_render_headshot_2026-03-24T22_02_52.997Z.png' },
   { name: 'cool guy', image: '/images/miis/gingka_render_headshot_2026-03-25T00_26_02.830Z.png' },
-  { name: 'nebulagamez', image: '/images/miis/Adrian_render_headshot_2026-03-24T22_43_30.373Z.png' },
-  { name: 'very broken ps3', image: '/images/miis/cannedfart_render_headshot_2026-03-24T21_49_38.735Z.png' },
-  { name: 'vista', image: '/images/miis/gilberr_render_headshot_2026-03-24T22_05_44.161Z.png' },
-  { name: 'ENO yosh :3', image: '/images/miis/Khentendo_render_headshot_2026-03-25T00_10_32.332Z.png' },
-  { name: 'synikers', image: '/images/miis/KittenPeng_render_headshot_2026-03-25T00_42_11.129Z.png' },
-  { name: 'sam.', image: '/images/miis/Sam_render_headshot_2026-03-24T21_54_02.653Z.png' },
-  { name: 'Ragy', image: '/images/miis/SatellaGuy_render_headshot_2026-03-24T22_50_14.552Z.png' },
 ];
 
-// Old simple list for backward compatibility
+// Backward compatibility: simple list of staff names
 export const staffList: string[] = staffMembers.map(s => s.name);
 
+/**
+ * Escapes HTML characters to prevent XSS attacks
+ * @param unsafe - Unsafe string that may contain HTML characters
+ * @returns Sanitized string with HTML characters escaped
+ */
 export function escapeHtml(unsafe: string): string {
   return unsafe
     .replace(/&/g, '&amp;')
