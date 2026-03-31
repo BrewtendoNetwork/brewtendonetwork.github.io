@@ -1,13 +1,12 @@
 'use client';
 
-import { createContext, useContext, useState, ReactNode } from 'react';
+import { createContext, useContext, useState, useCallback, ReactNode } from 'react';
 
-type Page = 'home' | 'guide' | 'guide_1' | 'guide_2' | 'guide_3' | 'badgearcade' | 'other' | 'progress';
+type Page = 'home' | 'guide' | 'guide_1' | 'guide_2' | 'badgearcade' | 'other' | 'progress';
 
 interface ContentContextType {
   currentPage: Page;
   changeContent: (page: Page) => void;
-  swapStyleSheet: (sheet: string) => void;
 }
 
 const ContentContext = createContext<ContentContextType | undefined>(undefined);
@@ -15,25 +14,15 @@ const ContentContext = createContext<ContentContextType | undefined>(undefined);
 export function ContentProvider({ children }: { children: ReactNode }) {
   const [currentPage, setCurrentPage] = useState<Page>('home');
 
-  const changeContent = (page: Page) => {
+  const changeContent = useCallback((page: Page) => {
     setCurrentPage(page);
-  };
-
-  const allowedSheets = ['/css/main.css', '/css/guide.css', '/globals.css'];
-
-  const swapStyleSheet = (sheet: string) => {
-    if (!allowedSheets.includes(sheet)) {
-      console.warn('Attempted to load unauthorized stylesheet:', sheet);
-      return;
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-    const link = document.getElementById('pagestyle') as HTMLLinkElement;
-    if (link) {
-      link.href = sheet;
-    }
-  };
+  }, []);
 
   return (
-    <ContentContext.Provider value={{ currentPage, changeContent, swapStyleSheet }}>
+    <ContentContext.Provider value={{ currentPage, changeContent }}>
       {children}
     </ContentContext.Provider>
   );

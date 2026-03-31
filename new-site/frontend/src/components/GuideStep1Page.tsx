@@ -3,56 +3,113 @@
 import { useContent } from '../contexts/ContentContext';
 
 export default function GuideStep1Page() {
-  const { changeContent, swapStyleSheet } = useContent();
+  const { changeContent } = useContent();
 
   return (
-    <div>
-      <div className="navi-bar">
-        <div id="center-navi">
-          <h4 onClick={() => { changeContent('home'); swapStyleSheet('/css/main.css'); }}>Brewtendo</h4>
-          <h4 onClick={() => { changeContent('guide'); swapStyleSheet('/css/guide.css'); }}>Install Guide</h4>
-          <h4 onClick={() => { changeContent('badgearcade'); swapStyleSheet('/css/guide.css'); }}>Badge Arcade</h4>
-          <h4 onClick={() => { changeContent('other'); swapStyleSheet('/css/main.css'); }} style={{border: 'none'}}>Other Info</h4>
-        </div>
-      </div>
-      <h1 id="header-guide-orange">Brewtendo installation guide:</h1>
-      <div className="style-center-container guide-txt">
+    <>
+      <h1 id="header-guide-orange">Brewtendo Installation Guide</h1>
+      <div className="style-center-container">
         <div className="style-center-div-top">
-          <h4>Setting up the proxy.</h4>
+          <h4>Setting Up the Proxy</h4>
         </div>
-        <div className="style-center-div-nocolor" id="float">
-          <details className="guide-txt">
-            <summary className="guide-txt"><h2>If you DON'T have Nimbus/Pretendo installed.</h2></summary>
-            <p>To start copy the ips file below labeled <code>0004013000002F02.ips</code> to <code>SD:/luma/sysmodules/</code> on your SD or microSD Card. Shut down your console and hold Select on startup. <br />When Luma3DS pops up make sure you have these options enabled.<br /><img src="https://raw.githubusercontent.com/BrewtendoNetwork/brewtendonetwork.github.io/main/meta/images/selectmenuimg.png" style={{width:'65%'}} alt="Select Menu" /><br />When successful you can proceed to the next steps!</p>
+        <div className="style-center-div-nocolor" style={{ textAlign: 'left' }}>
+          <details>
+            <summary>
+              <strong>If You DON&apos;T Have Nimbus/Pretendo Installed</strong>
+            </summary>
+            <p>
+              Copy the IPS file labeled <code>0004013000002F02.ips</code> to{' '}
+              <code>SD:/luma/sysmodules/</code> on your SD or microSD card.
+            </p>
+            <p>
+              Shut down your console and hold <strong>Select</strong> on startup. When Luma3DS
+              pops up, make sure you have these options enabled:
+            </p>
+            <div style={{ textAlign: 'center', margin: '12px 0' }}>
+              <img
+                src="/images/selectmenuimg.png"
+                style={{ width: '65%', maxWidth: '400px', borderRadius: '12px' }}
+                alt="Luma3DS Select Menu configuration"
+              />
+            </div>
+            <p>When successful, you can proceed to the next steps!</p>
           </details>
-          <details className="guide-txt">
-            <summary className="guide-txt"><h2>If you do have Pretendo</h2></summary>
-            <p>Go to the Nimbus app and select Nintendo Network<br /><span style={{fontSize:'0.8rem'}}>It's more stable this way but you can use Pretendo.</span><br />Now go into System Settings, when it loads, go into Internet Settings, Connection Settings, your WIFI connection, Change Settings, tap on the arrow, Proxy Settings, then select Yes to enable the proxy, Detailed Setup, Proxy Server and enter in these values exactly 69.202.205.93, select Port and enter these values exactly 3000. Go back to Your Wi-Fi connection settings, tap on Test Connection Wait until you get the error 003-####<hr style={{width:'90%'}} />Proxy is subject to change<hr style={{width:'90%'}} /></p>
+
+          <details>
+            <summary>
+              <strong>If You Have Pretendo Installed</strong>
+            </summary>
+            <p>
+              Go to the Nimbus app and select <strong>Nintendo Network</strong>.
+              <br />
+              <span style={{ fontSize: '0.85rem', color: '#888' }}>
+                It&apos;s more stable this way, but you can use Pretendo.
+              </span>
+            </p>
+            <p>
+              Now go into <strong>System Settings</strong> → <strong>Internet Settings</strong> →{' '}
+              <strong>Connection Settings</strong> → your Wi-Fi connection →{' '}
+              <strong>Change Settings</strong> → tap the arrow → <strong>Proxy Settings</strong> →{' '}
+              select <strong>Yes</strong> → <strong>Detailed Setup</strong>.
+            </p>
+            <p>
+              Set the <strong>Proxy Server</strong> to: <code>69.202.205.93</code>
+              <br />
+              Set the <strong>Port</strong> to: <code>3000</code>
+            </p>
+            <p>
+              Go back to your Wi-Fi connection settings, tap <strong>Test Connection</strong>,
+              and wait until you get the error <code>003-####</code>.
+            </p>
+            <p style={{ fontSize: '0.85rem', color: '#888' }}>
+              Proxy address is subject to change.
+            </p>
           </details>
-          <hr style={{width:'90%',marginTop:'20px'}} />
-          <h3 className="guide-txt">INFORMATION ABOUT THE ERROR CODE 003</h3>
-          <h3 className="guide-txt">This code means that you are not accepted yet into Brewtendo Network and you NEED TO WAIT to be accepted. Bunny the proxy owner, needs to manually accept you. Complaining about the error code in the <a href="https://discord.gg/brewtendo" rel="noopener noreferrer">discord</a> will get you nowhere.</h3>
-          <h3 className="guide-txt">NOTE: Bunny is in the EST time zone or UTC -5:00. HE IS A PERSON so be patient.</h3>
-          <h3 className="guide-txt">For more updates related to Brewtendo Network look in the official <a href="https://discord.gg/brewtendo" rel="noopener noreferrer">discord</a>.</h3>
-          <h3 className="guide-txt">And you are now connected to Brewtendo Network!</h3>
-          <hr style={{width:'90%'}} />
-          <div className="pill-button" style={{marginBottom:'15px',marginTop:'15px'}} onClick={() => { changeContent('guide_2'); swapStyleSheet('/css/guide.css'); }}>
-            Setting up the eShop.
+
+          <hr style={{ width: '90%', marginTop: '20px' }} />
+
+          <div style={{ textAlign: 'center', width: '100%' }}>
+            <h3><strong>About Error Code 003</strong></h3>
+            <p>
+              This code means you <strong>have not been accepted yet</strong> into Brewtendo
+              Network. You need to wait for Bunny (the proxy owner) to manually accept you.
+              Complaining about the error code in the{' '}
+              <a href="https://discord.gg/brewtendo" rel="noopener noreferrer" target="_blank">
+                Discord
+              </a>{' '}
+              will get you nowhere.
+            </p>
+            <p style={{ fontSize: '0.9rem', color: '#888' }}>
+              <strong>Note:</strong> Bunny is in the EST timezone (UTC -5:00). He is a person —
+              please be patient.
+            </p>
+            <p>
+              For more updates, check the official{' '}
+              <a href="https://discord.gg/brewtendo" rel="noopener noreferrer" target="_blank">
+                Brewtendo Discord
+              </a>
+              .
+            </p>
+            <p><strong>And you are now connected to Brewtendo Network!</strong></p>
+          </div>
+
+          <hr style={{ width: '90%' }} />
+          <div style={{ textAlign: 'center', width: '100%' }}>
+            <div
+              className="pill-button"
+              style={{ marginBottom: '16px', marginTop: '16px', display: 'inline-block' }}
+              onClick={() => changeContent('guide_2')}
+            >
+              Setting Up the eShop
+            </div>
           </div>
         </div>
       </div>
-      <h3></h3>
-      <hr className="hide" />
-      <hr className="hide" />
-      <hr className="hide" />
-      <div id="center-div">
-        <div className="pill-button" onClick={() => { changeContent('home'); swapStyleSheet('/css/main.css'); }}>
+      <div style={{ marginTop: '24px', marginBottom: '40px' }}>
+        <div className="pill-button" onClick={() => changeContent('home')}>
           Home Page
         </div>
       </div>
-      <hr className="hide" />
-      <hr className="hide" />
-      <hr className="hide" />
-    </div>
+    </>
   );
 }

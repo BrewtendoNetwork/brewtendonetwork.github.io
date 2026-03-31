@@ -12,22 +12,21 @@ import ProgressPage from './ProgressPage'
 export default function PageRenderer() {
   const { currentPage } = useContent()
 
-  switch (currentPage) {
-    case 'home':
-      return <HomePage />
-    case 'guide':
-      return <GuidePage />
-    case 'guide_1':
-      return <GuideStep1Page />
-    case 'guide_2':
-      return <GuideStep2Page />
-    case 'badgearcade':
-      return <BadgeArcadePage />
-    case 'other':
-      return <OtherPage />
-    case 'progress':
-      return <ProgressPage />
-    default:
-      return <HomePage />
+  const renderPage = () => {
+    switch (currentPage) {
+      case 'guide': return <GuidePage />
+      case 'guide_1': return <GuideStep1Page />
+      case 'guide_2': return <GuideStep2Page />
+      case 'badgearcade': return <BadgeArcadePage />
+      case 'other': return <OtherPage />
+      case 'progress': return <ProgressPage />
+      default: return <HomePage />
+    }
   }
+
+  return (
+    <div className="page-content" key={currentPage}>
+      {renderPage()}
+    </div>
+  )
 }
