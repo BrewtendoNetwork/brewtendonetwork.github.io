@@ -26,6 +26,14 @@ jobs:
         run: |
           cd new-site/frontend
           npm ci
+      - name: Optimize images
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends pngquant optipng jpegoptim
+          cd new-site/frontend/public/images
+          find . -iname '*.png' -exec pngquant --quality=65-80 --speed 1 --strip --force --ext .png {} \;
+          find . -iname '*.png' -exec optipng -o2 -strip all -quiet {} \;
+          find . \( -iname '*.jpg' -o -iname '*.jpeg' \) -exec jpegoptim --max=80 --strip-all {} \;
       - name: Build
         run: |
           cd new-site/frontend
