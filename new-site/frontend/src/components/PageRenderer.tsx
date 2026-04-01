@@ -8,6 +8,7 @@ import GuideStep2Page from './GuideStep2Page'
 import BadgeArcadePage from './BadgeArcadePage'
 import OtherPage from './OtherPage'
 import ProgressPage from './ProgressPage'
+import FAQPage from './FAQPage'
 
 export default function PageRenderer() {
   const { currentPage } = useContent()
@@ -20,12 +21,13 @@ export default function PageRenderer() {
       case 'badgearcade': return <BadgeArcadePage />
       case 'other': return <OtherPage />
       case 'progress': return <ProgressPage />
+      case 'faq': return <FAQPage />
       default: return <HomePage />
     }
   }
 
   return (
-    <div className="page-content" key={currentPage}>
+    <div key={currentPage}>
       {renderPage()}
     </div>
   )

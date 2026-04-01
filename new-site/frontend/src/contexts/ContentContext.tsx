@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useState, useCallback, ReactNode } from 'react';
 
-type Page = 'home' | 'guide' | 'guide_1' | 'guide_2' | 'badgearcade' | 'other' | 'progress';
+type Page = 'home' | 'guide' | 'guide_1' | 'guide_2' | 'badgearcade' | 'other' | 'progress' | 'faq';
 
 interface ContentContextType {
   currentPage: Page;
