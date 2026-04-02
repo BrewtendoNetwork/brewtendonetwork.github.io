@@ -1,5 +1,0 @@
-Contact: https://github.com/brewtendonetwork/brewtendonetwork.github.io/issues
-Expires: 2027-01-01T00:00:00.000Z
-Preferred-Languages: fr, en
-Canonical: https://brewtendonetwork.github.io/.well-known/security.txt
-Policy: https://brewtendonetwork.github.io/security
