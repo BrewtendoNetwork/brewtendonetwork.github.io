@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: 'Brewtendo\'s website, which is more or less a guide on how to install it on your 3DS.',
     images: [
       {
-        url: 'https://raw.githubusercontent.com/BrewtendoNetwork/brewtendonetwork.github.io/main/meta/images/imgbg.png',
+        url: 'https://raw.githubusercontent.com/BrewtendoNetwork/brewtendonetwork.github.io/refs/heads/main/new-site/frontend/public/images/imgbg.png',
         width: 1200,
         height: 630,
       },
