@@ -18,13 +18,13 @@ export default function GuideStep2Page() {
       <h1 id="header-guide-orange">Brewtendo installation guide:</h1>
       <div className="style-center-container guide-txt">
         <div className="style-center-div-top">
-          <h4>Disabling Brewtendo Network.</h4>
+          <h4>Disabling Brewtendo</h4>
         </div>
         <div className="style-center-div-nocolor" id="float">
-          <h3 className="guide-txt">Open System Settings, when it loads, go into Internet Settings, Connection Settings, your WIFI connection, Change Settings, tap on the arrow, Proxy Settings, then select No to disable it, it will remember your settings though, so when you re-enable it by hitting Yes The IP address and a Port should stay the same.</h3>
+          <h3 className="guide-txt">Open System Settings, when it loads, go into Internet Settings, navigate to Connection Settings, choose your WiFi connection, select Change Settings, tap on the arrow, click Proxy Settings, then select No to disable it. Your 3DS will remember your settings, so when you re-enable it by hitting Yes, The IP address and Port should stay the same.</h3>
           <hr style={{width:'90%'}} />
           <div className="pill-button" style={{marginBottom:'15px',marginTop:'15px'}} onClick={() => { changeContent('badgearcade'); swapStyleSheet('/css/guide.css'); }}>
-            Setting up Badge Arcade.
+            Setting up Badge Arcade
           </div>
         </div>
       </div>
