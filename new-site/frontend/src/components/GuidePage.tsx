@@ -24,7 +24,7 @@ export default function GuidePage() {
           <h2>What you WILL need</h2>
           <hr style={{width: '90%'}} />
           <ul>
-            <li><h2>A modded 3DS with Luma3DS and Universal Downloader installed.</h2></li>
+            <li><h2>A modded 3DS with Luma3DS and Universal Updater installed.</h2></li>
             <li><h3>Click or tap <a href="https://3ds.hacks.guide/" rel="noopener noreferrer">here</a> for more info.</h3></li>
             <li><h2>A stable Wi-Fi connection.</h2></li>
             <li><h2>A way to transfer files to your SD or microSD card.</h2></li>
