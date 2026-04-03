@@ -1,13 +1,13 @@
 function load_3() {
 	return `
-        <div class="navi-bar">
+		<div class="navi-bar">
             <div id="center-navi">
-                <h4 href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); playAudio('decide');">Brewtendo</h4>
-                <h4 href="#top" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); playAudio('decide');">Install Guide</h4>
-                <h4 href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/guide.css'); playAudio('decide');">Badge Arcade</h4>
-                <h4 href="#top" onclick="changeContent('other'); swapStyleSheet('meta/css/main.css'); playAudio('decide');" style="border: none;">Other Info</h4>
+                <h4 href="#top" onclick="changeContent('home'); swapStyleSheet('css/main.css'); playAudio('decide');">Brewtendo</h4>
+            	<h4 href="#top" onclick="changeContent('guide'); swapStyleSheet('css/guide.css'); playAudio('decide');">Install Guide</h4>
+                <h4 href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('css/guide.css'); playAudio('decide');">Badge Arcade</h4>
+                <h4 href="#top" onclick="changeContent('other'); swapStyleSheet('css/main.css'); playAudio('decide');" style="border: none;">Other Info</h4>
             </div>
-        </div>
+    	</div>
 			<h1 id="header-guide-red">Setting up Badge Arcade:</h1>
 		            <div class="style-center-container" class="guide-txt">
                         <div class="style-center-div-top">
@@ -24,7 +24,7 @@ function load_3() {
 		<hr class="hide">
 		<hr class="hide">
 		<div id="center-div">
-			<div class="pill-button" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); playAudio('decide');">
+			<div class="pill-button" onclick="changeContent('home'); swapStyleSheet('css/main.css'); playAudio('decide');">
 				Home Page
 			</div>
 		</div>

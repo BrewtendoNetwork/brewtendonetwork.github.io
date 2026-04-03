@@ -1,7 +1,6 @@
 'use client';
 
 import { useContent } from '../contexts/ContentContext';
-import { staffMembers } from '../data/staff';
 
 export default function OtherPage() {
   const { changeContent, swapStyleSheet } = useContent();
@@ -16,25 +15,15 @@ export default function OtherPage() {
           <h4 onClick={() => { changeContent('other'); swapStyleSheet('/css/main.css'); }} style={{border: 'none'}}>Other Info</h4>
         </div>
       </div>
-      <div className="style-center-div" style={{padding: '10px 10px 30px 10px'}} id="float">
-        Brewtendo Staff:
-        <hr style={{width: '100%'}} />
-        <div style={{display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center'}}>
-          {staffMembers.map((member) => (
-            <div key={member.name} style={{textAlign: 'center', width: '100px'}}>
-              <img 
-                src={member.image} 
-                width="80" 
-                height="80" 
-                alt={member.name}
-                style={{borderRadius: '8px', objectFit: 'cover'}}
-              />
-              <div style={{fontSize: '12px', marginTop: '5px', wordBreak: 'break-word'}}>
-                {member.name}
-              </div>
-            </div>
-          ))}
-        </div>
+      
+      <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px'}}>
+        <img src="/images/MiiTeamData/FounderTeam.png" width="250" alt="Founder"/>
+        <img src="/images/MiiTeamData/OwnerTeam.png" width="200" alt="Owner"/>
+        <img src="/images/MiiTeamData/AdminTeam.png" width="800" alt="Administrators"/>
+        <img src="/images/MiiTeamData/DevTeam.png" width="800" alt="Devs"/>
+        <img src="/images/MiiTeamData/UITeam.png" width="800" alt="Ui designers"/>
+        <img src="/images/MiiTeamData/ShopmanTeam.png" width="800" alt="eShop managers"/>
+        <img src="/images/MiiTeamData/ModTeam.png" width="800" alt="Discord mods"/>
       </div>
     </div>
   );

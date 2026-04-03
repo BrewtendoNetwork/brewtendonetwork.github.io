@@ -3,10 +3,10 @@ const nextConfig = {
   output: 'export',
   trailingSlash: true,
   distDir: 'out',
-  assetPrefix: '.',
   images: {
     unoptimized: true,
   },
+  allowedDevOrigins: ['127.0.0.1', 'localhost'],
 }
 
 module.exports = nextConfig

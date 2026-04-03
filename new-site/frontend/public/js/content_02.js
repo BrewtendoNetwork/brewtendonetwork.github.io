@@ -1,13 +1,13 @@
 function load_2() {
     return `
-        <div class="navi-bar">
+		<div class="navi-bar">
             <div id="center-navi">
-                <h4 href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); playAudio('decide');">Brewtendo</h4>
-                <h4 href="#top" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); playAudio('decide');">Install Guide</h4>
-                <h4 href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/guide.css'); playAudio('decide');">Badge Arcade</h4>
-                <h4 href="#top" onclick="changeContent('other'); swapStyleSheet('meta/css/main.css'); playAudio('decide');" style="border: none;">Other Info</h4>
+                <h4 href="#top" onclick="changeContent('home'); swapStyleSheet('css/main.css'); playAudio('decide');">Brewtendo</h4>
+            	<h4 href="#top" onclick="changeContent('guide'); swapStyleSheet('css/guide.css'); playAudio('decide');">Install Guide</h4>
+                <h4 href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('css/guide.css'); playAudio('decide');">Badge Arcade</h4>
+                <h4 href="#top" onclick="changeContent('other'); swapStyleSheet('css/main.css'); playAudio('decide');" style="border: none;">Other Info</h4>
             </div>
-        </div>
+    	</div>
 			<h1 id="header-guide-orange">Brewtendo installation guide:</h1>
 		            <div class="style-center-container" class="guide-txt">
                         <div class="style-center-div-top">
@@ -26,7 +26,7 @@ function load_2() {
 								<li><h3>Click or tap <a href="https://pretendo.network/docs/install/3ds">Here</a> for more info.</h2></li>
 							</ul>
 							<hr style="width:90%;" />
-							<div class="pill-button" style="margin-bottom:15px;margin-top:15px;" onclick="changeContent('guide_1'); swapStyleSheet('meta/css/guide.css'); playAudio('decide');">
+							<div class="pill-button" style="margin-bottom:15px;margin-top:15px;" onclick="changeContent('guide_1'); swapStyleSheet('css/guide.css'); playAudio('decide');">
 								Setting up the proxy.
 							</div>
                         </div>
@@ -37,7 +37,7 @@ function load_2() {
 		<hr class="hide">
 		<hr class="hide">
 							<div id="center-div">
-								<div class="pill-button" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); playAudio('decide');">
+								<div class="pill-button" onclick="changeContent('home'); swapStyleSheet('css/main.css'); playAudio('decide');">
 									Home Page
 								</div>
 							</div>
@@ -51,10 +51,10 @@ function load_2_1() {
 	return `
 		<div class="navi-bar">
             <div id="center-navi">
-                <h4 href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); playAudio('decide');">Brewtendo</h4>
-                <h4 href="#top" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); playAudio('decide');">Install Guide</h4>
-                <h4 href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/guide.css'); playAudio('decide');">Badge Arcade</h4>
-                <h4 href="#top" onclick="changeContent('other'); swapStyleSheet('meta/css/main.css'); playAudio('decide');" style="border: none;">Other Info</h4>
+                <h4 href="#top" onclick="changeContent('home'); swapStyleSheet('css/main.css'); playAudio('decide');">Brewtendo</h4>
+                <h4 href="#top" onclick="changeContent('guide'); swapStyleSheet('css/guide.css'); playAudio('decide');">Install Guide</h4>
+                <h4 href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('css/guide.css'); playAudio('decide');">Badge Arcade</h4>
+                <h4 href="#top" onclick="changeContent('other'); swapStyleSheet('css/main.css'); playAudio('decide');" style="border: none;">Other Info</h4>
             </div>
         </div>
 			<h1 id="header-guide-orange">Brewtendo installation guide:</h1>
@@ -65,7 +65,7 @@ function load_2_1() {
                     <div class="style-center-div-nocolor" id="float">
 						<details class="guide-txt">
 							<summary class="guide-txt"><h2>If you DON'T have Nimbus/Pretendo installed.</h2></summary>
-							<p>To start copy the ips file below labeled <code>0004013000002F02.ips</code> to <code>SD:/luma/sysmodules/</code> on your SD or microSD Card. Shut down your console and hold Select on startup. <br />When Luma3DS pops up make sure you have these options enabled.<br /><img src="https://brewtendonetwork.github.io/meta/images/selectmenuimg.png" style="width:65%;" /><br />When successful you can proceed to the next steps!</p>
+							<p>To start copy the ips file below labeled <code>0004013000002F02.ips</code> to <code>SD:/luma/sysmodules/</code> on your SD or microSD Card. Shut down your console and hold Select on startup. <br />When Luma3DS pops up make sure you have these options enabled.<br /><img src="old-site/meta/images/selectmenuimg.png" style="width:65%;" /><br />When successful you can proceed to the next steps!</p>
 						</details>
 						<details class="guide-txt">
 							<summary class="guide-txt"><h2>If you do have Pretendo</h2></summary>
@@ -78,7 +78,7 @@ function load_2_1() {
 						<h3 class="guide-txt">For more updates related to Brewtendo Network look in the official <a href="https://discord.gg/brewtendo">discord</a>.</h3>
 						<h3 class="guide-txt">And you are now connected to Brewtendo Network!</h3>
 						<hr style="width:90%;" />
-						<div class="pill-button" style="margin-bottom:15px;margin-top:15px;" onclick="changeContent('guide_2'); swapStyleSheet('meta/css/guide.css'); playAudio('decide');">
+						<div class="pill-button" style="margin-bottom:15px;margin-top:15px;" onclick="changeContent('guide_2'); swapStyleSheet('css/guide.css'); playAudio('decide');">
 							Setting up the eShop.
 						</div>
 					</div>
@@ -88,7 +88,7 @@ function load_2_1() {
 		<hr class="hide">
 		<hr class="hide">
 		<div id="center-div">
-			<div class="pill-button" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); playAudio('decide');">
+			<div class="pill-button" onclick="changeContent('home'); swapStyleSheet('css/main.css'); playAudio('decide');">
 				Home Page
 			</div>
 		</div>
@@ -103,10 +103,10 @@ function load_2_2() {
 	return `
 		<div class="navi-bar">
             <div id="center-navi">
-                <h4 href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); playAudio('decide');">Brewtendo</h4>
-                <h4 href="#top" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); playAudio('decide');">Install Guide</h4>
-                <h4 href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/guide.css'); playAudio('decide');">Badge Arcade</h4>
-                <h4 href="#top" onclick="changeContent('other'); swapStyleSheet('meta/css/main.css'); playAudio('decide');" style="border: none;">Other Info</h4>
+                <h4 href="#top" onclick="changeContent('home'); swapStyleSheet('css/main.css'); playAudio('decide');">Brewtendo</h4>
+                <h4 href="#top" onclick="changeContent('guide'); swapStyleSheet('css/guide.css'); playAudio('decide');">Install Guide</h4>
+                <h4 href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('css/guide.css'); playAudio('decide');">Badge Arcade</h4>
+                <h4 href="#top" onclick="changeContent('other'); swapStyleSheet('css/main.css'); playAudio('decide');" style="border: none;">Other Info</h4>
             </div>
         </div>
 			<h1 id="header-guide-orange">Brewtendo installation guide:</h1>
@@ -117,7 +117,7 @@ function load_2_2() {
                     <div class="style-center-div-nocolor" id="float">
 						<h3 class="guide-txt">Open System Settings, when it loads, go into Internet Settings, Connection Settings, your WIFI connection, Change Settings, tap on the arrow, Proxy Settings, then select No to disable it, it will remember your settings though, so when you re-enable it by hitting Yes The IP address and a Port should stay the same.</h3>
 						<hr style="width:90%;" />
-						<div class="pill-button" style="margin-bottom:15px;margin-top:15px;" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/guide.css'); playAudio('decide');">
+						<div class="pill-button" style="margin-bottom:15px;margin-top:15px;" onclick="changeContent('badgearcade'); swapStyleSheet('css/guide.css'); playAudio('decide');">
 							Setting up Badge Arcade.
 						</div>
 					</div>
@@ -127,7 +127,7 @@ function load_2_2() {
 		<hr class="hide">
 		<hr class="hide">
 		<div id="center-div">
-			<div class="pill-button" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); playAudio('decide');">
+			<div class="pill-button" onclick="changeContent('home'); swapStyleSheet('css/main.css'); playAudio('decide');">
 				Home Page
 			</div>
 		</div>

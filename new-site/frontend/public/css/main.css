@@ -231,7 +231,7 @@ body {
     }
 }
 
-        .navi-bar h4 {
+.navi-bar h4 {
             float: left;
             color: white;
             text-align: center;
@@ -241,21 +241,20 @@ body {
             border-right: 2px solid #f7e0b5;
         }
 
-            .navi-bar h4:hover {
+.navi-bar h4:hover {
                 cursor: pointer;
                 color: white;
                 padding: 0 15px;
             }
 
-            .navi-bar h4:active {
+.navi-bar h4:active {
                 cursor: pointer;
                 color: white;
                 padding: 0px 15px;
-            }
+}
 
 
-    @media (min-width: 800px) {
-        .navi-bar h4 {
+    .navi-bar h4 {
             float: left;
             color: white;
             text-align: center;
@@ -264,18 +263,17 @@ body {
             font-size: 13px;
         }
 
-            .navi-bar h4:hover {
-                cursor: pointer;
-                color: white;
-                padding: 0 2vw;
-            }
+        .navi-bar h4:hover {
+            cursor: pointer;
+            color: white;
+            padding: 0 2vw;
+        }
 
-            .navi-bar h4:active {
-                cursor: pointer;
-                color: white;
-                padding: 0px 2vw;
-            }
-    }
+        .navi-bar h4:active {
+            cursor: pointer;
+            color: white;
+            padding: 0px 2vw;
+        }
 
     .pfp {
         width: 30px;

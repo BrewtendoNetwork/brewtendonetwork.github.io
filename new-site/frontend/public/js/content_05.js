@@ -1,13 +1,13 @@
 function load_5() {
 	return `
-	    <div class="navi-bar">
+		<div class="navi-bar">
             <div id="center-navi">
-                <h4 href="#top" onclick="changeContent('home'); swapStyleSheet('meta/css/main.css'); playAudio('decide');">Brewtendo</h4>
-                <h4 href="#top" onclick="changeContent('guide'); swapStyleSheet('meta/css/guide.css'); playAudio('decide');">Install Guide</h4>
-                <h4 href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('meta/css/guide.css'); playAudio('decide');">Badge Arcade</h4>
-                <h4 href="#top" onclick="changeContent('other'); swapStyleSheet('meta/css/main.css'); playAudio('decide');" style="border: none;">Other Info</h4>
+                <h4 href="#top" onclick="changeContent('home'); swapStyleSheet('css/main.css'); playAudio('decide');">Brewtendo</h4>
+            	<h4 href="#top" onclick="changeContent('guide'); swapStyleSheet('css/guide.css'); playAudio('decide');">Install Guide</h4>
+                <h4 href="#top" onclick="changeContent('badgearcade'); swapStyleSheet('css/guide.css'); playAudio('decide');">Badge Arcade</h4>
+                <h4 href="#top" onclick="changeContent('other'); swapStyleSheet('css/main.css'); playAudio('decide');" style="border: none;">Other Info</h4>
             </div>
-        </div>
+    	</div>
         <div id="center-div">
         <h1 id="header-guide-blue">Progress on website:</h1>
         <section>
