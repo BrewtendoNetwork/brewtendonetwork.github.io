@@ -25,10 +25,9 @@ export default function ProgressPage() {
         <ul style={{listStyleType: 'none', fontSize: '25px', color: '#696969', fontFamily: 'MarvelouzTubeFont3', lineHeight: '50px'}}>
           <li>Proper home page</li>
           <li>Make "other info" page</li>
-          <li>Give out deserved credits</li>
+          <li>Give out credits</li>
           <li>Support Page</li>
         </ul>
-        <p>(yes thats really it I have nothing else to add other than this..)<br />I will remove what's finished every time I finish something</p>
       </div>
     </div>
   );
