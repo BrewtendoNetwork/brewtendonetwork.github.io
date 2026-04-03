@@ -15,10 +15,10 @@ export default function GuideStep1Page() {
           <h4 onClick={() => { changeContent('other'); swapStyleSheet('/css/main.css'); }} style={{border: 'none'}}>Other Info</h4>
         </div>
       </div>
-      <h1 id="header-guide-orange">Brewtendo installation guide:</h1>
+      <h1 id="header-guide-orange">Installation Guide</h1>
       <div className="style-center-container guide-txt">
         <div className="style-center-div-top">
-          <h4>Setting up the proxy.</h4>
+          <h4>Setting up the proxy server</h4>
         </div>
         <div className="style-center-div-nocolor" id="float">
           <details className="guide-txt">
@@ -33,11 +33,11 @@ export default function GuideStep1Page() {
           <h3 className="guide-txt">INFORMATION ABOUT THE ERROR CODE 003</h3>
           <h3 className="guide-txt">This code means that you are not accepted yet into Brewtendo Network and you NEED TO WAIT to be accepted. Bunny the proxy owner, needs to manually accept you. Complaining about the error code in the <a href="https://discord.gg/brewtendo" rel="noopener noreferrer">discord</a> will get you nowhere.</h3>
           <h3 className="guide-txt">NOTE: Bunny is in the EST time zone or UTC -5:00. HE IS A PERSON so be patient.</h3>
-          <h3 className="guide-txt">For more updates related to Brewtendo Network look in the official <a href="https://discord.gg/brewtendo" rel="noopener noreferrer">discord</a>.</h3>
-          <h3 className="guide-txt">And you are now connected to Brewtendo Network!</h3>
+          <h3 className="guide-txt">For more updates related to Brewtendo, look in the official <a href="https://discord.gg/brewtendo" rel="noopener noreferrer">Discord</a>.</h3>
+          <h3 className="guide-txt">And you are now connected to Brewtendo!</h3>
           <hr style={{width:'90%'}} />
           <div className="pill-button" style={{marginBottom:'15px',marginTop:'15px'}} onClick={() => { changeContent('guide_2'); swapStyleSheet('/css/guide.css'); }}>
-            Setting up the eShop.
+            Setting up the eShop
           </div>
         </div>
       </div>
