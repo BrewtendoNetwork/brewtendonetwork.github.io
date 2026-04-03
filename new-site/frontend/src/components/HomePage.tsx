@@ -23,7 +23,7 @@ export default function HomePage() {
               <img src="/images/3DS_Icon_Brew-1.png" width="100" alt="Brewtendo" />
               <h1 id="logo">Brewtendo</h1>
             </div>
-            <p style={{ margin: '10px 0 0 0', fontSize: '14px', color: '#5e5c50' }}>The only official website for Brewtendo Network.</p>
+            <p style={{ margin: '10px 0 0 0', fontSize: '14px', color: '#5e5c50' }}>The only official website for Brewtendo.</p>
           </div>
         </div>
 
@@ -35,7 +35,7 @@ export default function HomePage() {
               </div>
               <div className="style-center-div-nocolor" id="float">
                 <div className="pill-button" onClick={() => { changeContent('guide'); swapStyleSheet('/css/guide.css'); }}>
-                  Installation guide
+                  Installation Guide
                 </div>
               </div>
             </div>
@@ -50,7 +50,7 @@ export default function HomePage() {
                 </div>
                 <hr style={{ width: '100%', marginTop: '25px' }} />
                 <h3>To start, install Badge Arcade from the eShop or hShop and update the game.</h3>
-                <h4 style={{ fontSize: '14px', marginTop: '25px' }}>Wanna check out the progress on the site?<br />this should change as the site progresses until the eventual release later in (april)?</h4>
+                <h4 style={{ fontSize: '14px', marginTop: '25px' }}>Wanna check out the progress on the site?<br />Click below!</h4>
                 <div className="pill-button" style={{ marginBottom: '15px' }} onClick={() => { changeContent('progress'); swapStyleSheet('/css/guide.css'); }}>
                   Progress
                 </div>
@@ -61,8 +61,8 @@ export default function HomePage() {
           <div className="style-center-div" id="float" style={{ marginTop: '-30px' }}>
             Brewtendo Description:
             <hr style={{ width: '100%' }} />
-            Brewtendo is a Nintendo Network revival for the 3DS, it's not really trying to be a potential Pretendo rival, however. Instead it revives the things that they wouldn't add such as the eShop, Badge Arcade, Theme Shop, Spotpass, and Nintendo Video.
-            <br />(devs lmk if i missed anything or you want me to add / change to this.)
+            Brewtendo is a revival for services previously discontinued on the Nintendo 3DS. We revive services such as the eShop, Badge Arcade, Theme Shop, SpotPass, and Nintendo Video.
+            <br />
             <img width="70" src="https://raw.githubusercontent.com/BrewtendoNetwork/brewtendonetwork.github.io/main/assets/eShop.png" alt="" />
             If you live under a rock and want insight to why the eShop <br />shut down in 2023 then look{' '}
             <span style={{ cursor: 'pointer' }} onClick={() => window.open('https://en-americas-support.nintendo.com/app/answers/detail/a_id/57847/~/wii-u-%26-nintendo-3ds-eshop-discontinuation-q%26a', '_blank', 'noopener,noreferrer')}>
