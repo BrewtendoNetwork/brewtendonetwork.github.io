@@ -21,9 +21,9 @@ export default function OtherPage() {
         <img src="/images/MiiTeamData/OwnerTeam.png" width="200" alt="Owner"/>
         <img src="/images/MiiTeamData/AdminTeam.png" width="800" alt="Administrators"/>
         <img src="/images/MiiTeamData/DevTeam.png" width="800" alt="Devs"/>
-        <img src="/images/MiiTeamData/UITeam.png" width="800" alt="Ui designers"/>
-        <img src="/images/MiiTeamData/ShopmanTeam.png" width="800" alt="eShop managers"/>
-        <img src="/images/MiiTeamData/ModTeam.png" width="800" alt="Discord mods"/>
+        <img src="/images/MiiTeamData/UITeam.png" width="800" alt="UI designers"/>
+        <img src="/images/MiiTeamData/ShopmanTeam.png" width="800" alt="eShop Managers"/>
+        <img src="/images/MiiTeamData/ModTeam.png" width="800" alt="Discord Moderators"/>
       </div>
     </div>
   );
