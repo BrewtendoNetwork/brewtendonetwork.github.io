@@ -18,5 +18,5 @@ This is the repository that hosts the files used by the **Brewtendo Network Webs
 ---
 
 ## Join the discord!
-To learn more about **Brewtendo Network** at the official [Discord](https://discord.gg/brewtendo) .
-[<img src="assets/discord.webp" width="190">]([https://github.com/ungive/discord-music-presence/releases/download/v2.3.5/musicpresence-2.3.5-windows-x64-installer.exe](https://discord.gg/brewtendo))
+To learn more about **Brewtendo Network** at the official 
+[<img src="assets/discord.webp" width="190">]([https://github.com/ungive/discord-music-presence/releases/download/v2.3.5/musicpresence-2.3.5-windows-x64-installer.exe](https://discord.gg/brewtendo)) [Discord](https://discord.gg/brewtendo) .
