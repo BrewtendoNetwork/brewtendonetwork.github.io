@@ -1,5 +1,5 @@
 <div align="center">
-             [<img src="assets/3DS_Icon_Brew-1.png" alt="Brewtendo Logo" width="256" />](https://github.com/ungive/discord-music-presence/releases/download/v2.3.5/musicpresence-2.3.5-windows-x64-installer.exe)
+             [<img src="assets/3DS_Icon_Brew-1.png" alt="Brewtendo Logo" width="256">](https://github.com/ungive/discord-music-presence/releases/download/v2.3.5/musicpresence-2.3.5-windows-x64-installer.exe)
              <h1>Brewtendo Network Vugbdok Website Test</h1>
 </div>
 
