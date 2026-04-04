@@ -19,4 +19,4 @@ This is the repository that hosts the files used by the **Brewtendo Network Webs
 
 ## Join the discord!
 To learn more about **Brewtendo Network** at the official [Discord](https://discord.gg/brewtendo) .
-
+[<img src="https://raw.githubusercontent.com/ungive/discord-music-presence/refs/heads/master/assets/download_windows-installer-x64.png" width="190">](https://github.com/ungive/discord-music-presence/releases/download/v2.3.5/musicpresence-2.3.5-windows-x64-installer.exe)
