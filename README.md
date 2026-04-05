@@ -1,6 +1,6 @@
 <div align="center">
              <img src="assets/3DS_Icon_Brew-1.png" alt="Brewtendo Logo" width="256" />
-             <h1>Brewtendo Network Vugbdok Website Test</h1>
+             <h1>Brewtendo Network Website</h1>
 </div>
 
 
