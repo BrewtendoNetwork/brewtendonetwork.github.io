@@ -1,5 +1,5 @@
 <div align="center">
-             <img src="assets/3DS_Icon_Brew-1.png" alt="Brewtendo Logo" width="256" />
+             <img src="public/images/3DS_Icon_Brew-1.png" alt="Brewtendo Logo" width="256" />
              <h1>Brewtendo Network Website</h1>
 </div>
 
@@ -19,4 +19,4 @@ This is the repository that hosts the files used by the **Brewtendo Network Webs
 
 ## Join the discord!
 To learn more about **Brewtendo Network** at the official 
-[<img src="assets/discord.webp" width="30">](https://discord.gg/brewtendo) [Discord](https://discord.gg/brewtendo) .
+[<img src="public/images/discord.webp" width="30">](https://discord.gg/brewtendo) [Discord](https://discord.gg/brewtendo) .
