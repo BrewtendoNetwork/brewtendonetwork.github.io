@@ -8,12 +8,12 @@
 
 @font-face {
     font-family: RodinNTLG;
-    src: url('../FOT-RodinNTLG Pro DB.otf');
+    src: url('../fonts/FOT-RodinNTLG Pro DB.otf');
 }
 
 @font-face {
     font-family: MarvelouzTubeFont3;
-    src: url('../MarvelouzTube Font 3.ttf')
+    src: url('../fonts/MarvelouzTube Font 3.ttf');
 }
 
 body {
