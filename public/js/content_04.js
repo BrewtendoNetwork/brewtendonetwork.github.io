@@ -11,7 +11,6 @@ function load_04() {
 			<img src="public/images/MiiTeamData/FounderTeam.png" width="250" alt="Founder"/>
 			<img src="public/images/MiiTeamData/OwnerTeam.png" width="200" alt="Owner"/>
 			<img src="public/images/MiiTeamData/AdminTeam.png" width="800" alt="Administrators"/>
-			<img src="public/images/MiiTeamData/DevTeam.png" width="800" alt="Devs"/>
 			<img src="public/images/MiiTeamData/UITeam.png" width="800" alt="Ui designers"/>
 			<img src="public/images/MiiTeamData/ShopmanTeam.png" width="800" alt="eShop managers"/>
 			<img src="public/images/MiiTeamData/ModTeam.png" width="800" alt="Discord mods"/>
