@@ -8,26 +8,75 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Brewtendo">
     <meta property="og:description" content="Brewtendo's website, which is under construction.">
-        <meta property="og:image:height" content="630">
+    <meta property="og:image:height" content="630">
     <title>Brewtendo</title>
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .gallery-item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 300px;
+        }
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .bottom-gif {
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .bottom-gif img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <h1>Under construction</h1><br>
-    <h2><a href="https://discord.gg/brewtendo">Discord</a></h2><br>
+    <h1>Under construction</h1>
+    <h2><a href="https://discord.gg/brewtendo">Discord</a></h2>
     <h3><a href="https://github.com/BrewtendoNetwork">Github</a></h3>
-    <img src="/img/peng_construct.png"><br><br>
-    <sub>thanks peng for the image</sub><br><br>
-    <img src="/img/bunny_construct.png"><br><br>
-    <sub>thanks bunny for the image</sub><br><br>
-    <img src="/img/selim_construct.jpg"><br><br>
-    <sub>thanks selim for the image</sub><br><br>
-    <img src="/img/absolute_peng.png"><br><br>
-    <sub>thanks sam for the image</sub><br><br>
-    <img src="/img/ace_contrib.jpg" style="width: 500px; height: 500px;"><br><br>
-    <sub>thanks ace for the image</sub><br><br>
-    <img src="/img/orange_bastard.jpg"><br><br>
-    <sub>thanks ace for your orange bastard(aka cat, you refered to it as that during vc at 2026-09-01 at 9:02PM EST)</sub><br><br>
-    <img src="/img/peng_caption.gif"><br><br>
-    <sub>thanks peng for your caption of selim</sub><br><br>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="/img/peng_construct.png">
+            <sub>thanks peng for the image</sub>
+        </div>
+        <div class="gallery-item">
+            <img src="/img/bunny_construct.png">
+            <sub>thanks bunny for the image</sub>
+        </div>
+        <div class="gallery-item">
+            <img src="/img/selim_construct.jpg">
+            <sub>thanks selim for the image</sub>
+        </div>
+        <div class="gallery-item">
+            <img src="/img/absolute_peng.png">
+            <sub>thanks sam for the image</sub>
+        </div>
+        <div class="gallery-item">
+            <img src="/img/ace_contrib.jpg">
+            <sub>thanks ace for the image</sub>
+        </div>
+        <div class="gallery-item">
+            <img src="/img/orange_bastard.jpg">
+            <sub>thanks ace for your orange bastard(aka cat, you refered to it as that during vc at 2026-09-01 at 9:02PM EST)</sub>
+        </div>
+    </div>
+
+    <div class="bottom-gif">
+        <img src="/img/peng_caption.gif">
+        <sub>thanks peng for your caption of selim</sub>
+    </div>
+
+    <sub>Thom is also a cheese ball :3</sub>
 </body>
 </html>
